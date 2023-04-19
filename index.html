@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url('airplane1.jpg');
+            background-size: 1500px 800px;
+            margin: 0px;
+            font-family: 'Baloo Bhai', cursive;
+        }
+
+        Header {
+            padding: 5px;
+            background-color: #4496e2;
+            border-radius: 10px;
+        }
+
+        img {
+            margin: 0px 10px;
+            width: 70px;
+        }
+
+        .left {
+            width: 150px;
+            line-height: 15px;
+            text-align: center;
+            position: absolute;
+            left: 20px;
+            top: 5px;
+        }
+
+        .navbar {
+            display: block;
+            margin: 25px auto;
+            width: 600px;
+        }
+
+        .navbar ul {
+            margin: 10px 15px;
+            display: block;
+            width: 500px
+        }
+
+        .right ul {
+            width: 150px;
+            display: block;
+            text-align: center;
+            margin: 18px 19px;
+            padding: 2px;
+            position: absolute;
+            right: 20px;
+            top: 5px;
+        }
+
+        .box2 a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .box2 {
+            display: inline-block;
+        }
+
+        .box {
+            display: inline;
+            margin: 5px 3px;
+            padding: 5px 17px;
+            cursor: pointer;
+        }
+
+        .box2:hover a {
+            color: rgb(128, 92, 78);
+        }
+
+        .box:hover {
+            background-color: rgb(146, 208, 208);
+            border-radius: 10px;
+            text-decoration: underline;
+        }
+
+        .discription {
+            display: inline-block;
+            padding: 15px 50px;
+            background-color: rgba(114, 181, 210, 0.459);
+            border-radius: 60px;
+            margin-top: 80px;
+            margin-left: 40px;
+            width: 550px;
+            font-size: 30px;
+        }
+
+        .discription div {
+            width: 200px;
+            margin: 2px auto;
+            background-color: rgba(43, 43, 152, 0.877);
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .discription div:hover {
+            background-color: rgb(40, 141, 107);
+            cursor: pointer;
+        }
+
+        form {
+            display: block;
+            width: 640px;
+            height: 330px;
+            background-color: rgba(38, 41, 16, 0.5);
+            border-radius: 30px;
+            float: right;
+            padding: 4px;
+            margin-top: 290px;
+            margin-right: 20px;
+            font-size: 30px;
+        }
+
+
+        .form1 {
+            background-color: rgb(93, 159, 161);
+            display: inline-block;
+            margin: 10px auto;
+            margin-top: 30px;
+            margin-left: 16px;
+            border-radius: 8px;
+            padding: 10px;
+
+        }
+
+        .form {
+            background-color: rgb(93, 159, 161);
+            display: inline-block;
+            margin: 10px auto;
+            margin-top: 20px;
+            margin-left: 17px;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        .button {
+            background-color: rgb(35, 44, 114);
+
+            display: block;
+            margin: 30px 50px;
+            border-radius: 8px;
+            text-align: center;
+            padding: 10px;
+        }
+        .button:hover{
+            background-color: rgb(124, 65, 29);
+
+            color: rgb(77, 155, 135);
+        }
+    </style>
+</head>
+
+<body>
+    <Header>
+        <div class="left">
+            <img src="air.png" alt="error loding">
+            <div>Purvendu Travels</div>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li class="box">Home</li>
+                <li class="box">Your Cart</li>
+                <li class="box">Favourites</li>
+                <li class="box">Your Orders</li>
+            </ul>
+        </div>
+        <div class="right">
+            <ul>
+                <li class="box2"><a href="#">Login </a></li>
+                <li style="display: inline-block;"> / </li>
+                <li class="box2"><a href="#"> Sign UP</a></li>
+            </ul>
+        </div>
+    </Header>
+    <div class="discription">
+        <h1>Life Is Short And The World Is Wide!</h1>
+        <p>To get best of your adventur you just need to leave and go where you like. we are waiting for you.</p>
+        <div>Book Now</div>
+    </div>
+    <form action="nothing.php">
+        <div class="form1">
+            <label for="place"> From..</label>
+            <select name="noname" id="place">
+                <option value="JP">Jaipur</option>
+                <option value="JHP"Selected>Jodhpur</option>
+                <option value="DL">Delhi</option>
+                <option value="GJ">Gujraj</option>
+                <option value="HMP">Himachal Pradesh</option>
+                <option value="UK">Utrakhand</option>
+                <option value="BH">Bihar</option>
+                <option value="WB">West Bengal</option>
+                <option value="HR">Haryana</option>
+                <option value="MP">Madhya Pradesh</option>
+            </select>
+        </div>
+        <div class="form1">
+            <label for="place"> Destination..</label>
+            <select name="noname" id="place">
+                <option value="JP">Jaipur</option>
+                <option value="JHP">Jodhpur</option>
+                <option value="DL">Delhi</option>
+                <option value="GJ">Gujraj</option>
+                <option value="HMP">Himachal Pradesh</option>
+                <option value="UK">Utrakhand</option>
+                <option value="BH">Bihar</option>
+                <option value="WB">West Bengal</option>
+                <option value="HR">Haryana</option>
+                <option value="MP">Madhya Pradesh</option>
+            </select>
+        </div>
+        <div class="form">
+            <label for="date">Date of Departure:</label>
+            <input type="date" id="date">
+        </div>
+        <div class="button">
+            Submit
+        </div>
+    </form>
+</body>
+
+</html>
